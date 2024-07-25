@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | Hack2Skill</title>
+  <link
+  rel="stylesheet"
+  href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+/>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    *{
+      margin: 0;
+      box-sizing: border-box;
+      padding: 0;
+      
+    }
+    .signup-form {
+    
+      /* backdrop-filter: blur 2px; */
+      background-image: url(signup-img-removebg-preview\ \(3\).png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 1em;
+    }
+    .signup-container {
+   /* background-color: #1000009c; */
+      margin-top: 10%;
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 900px;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .signup-image {
+      max-width: 100%;
+      height: auto;
+    }
+    .social-buttons .btn {
+      margin: 0 5px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .social-buttons .btn i {
+      font-size: 24px;
+    }
+   
+    @media (max-width: 768px) {
+      .signup-container {
+        flex-wrap:wrap;
+      }
+
+    }
+  </style>
+</head>
+<body>
+  <div class="signup-form">
+  <div class="container">
+    <div class="signup-container mx-auto">
+      <div class="col-md-6 d-none d-md-block text-center">
+        <img src="signup-girl.png" alt="Signup Image" class="signup-image">
+      </div>
+      <div class="col-md-6">
+        <h2 class="mb-4 text-center " style="color: aliceblue;">Sign Up</h2>
+        <div class="social-buttons text-center mb-4 d-flex justify-content-lg-center">
+          <button class="btn btn-outline-primary"><i class="fab fa-google"></i></button>
+          <button class="btn btn-outline-primary"><i class="fab fa-linkedin-in"></i></button>
+          <button class="btn btn-outline-primary"><i class="fab fa-github"></i></button>
+        </div>
+        <p class="text-center mb-3" style="color: aliceblue;">OR</p>
+        <form>
+          <div class="form-group">
+            <label for="fullName">Full Name:</label>
+            <input type="text" class="form-control" id="fullName" placeholder="eg: KHADIJA TAZEEN">
+          </div>
+          <div class="form-group">
+            <label for="email" style="color: aliceblue;">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="eg: abc@xyz.com">
+            
+          </div>
+          <div class="form-group">
+            <label for="password" style="color: aliceblue;">Password:</label>
+            <input type="password" class="form-control" id="password" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <label for="confirmPassword" style="color: aliceblue;">Confirm Pa/ssword:</label>
+            <input type="password" class="form-control" id="confirmPassword" placeholder="Enter your Password again">
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+        </form>
+        <p class="text-center mt-3" style="color: aliceblue;">
+          Already have an account? <a href="#">Sign In</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
