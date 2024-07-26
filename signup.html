@@ -69,142 +69,17 @@
       }
 
     }
-    .navbar-custom {
-    transition: background-color 0.3s, padding 0.3s;
-    backdrop-filter: blur(2px);
-    background-color: rgba(var(--dark), 0.5);
-  }
-  
-  .navbar-transparent {
-    background-color: transparent !important;
-    backdrop-filter: none !important;
-    padding: 1rem !important;
-  }
-  
-  .navbar-brand {
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: var(--blue);
-    transition: opacity 0.3s;
-  }
-  
-  .navbar-brand.hidden {
-    opacity: 0;
-  }
-  
-  .navbar-nav .nav-link {
-    color: var(--blue) !important;
-    transition: color 0.3s;
-  }
-  
-  .navbar-nav .nav-link:hover {
-    color: var(--yellow) !important;
-  }
-  
-  .navbar-toggler {
-    border: none;
-    outline: none;
-  }
-  
-  .navbar-toggler .animated-icon {
-    display: block;
-    width: 40px;
-    height: 3px;
-    background-color: var(--blue);
-    margin: 5px auto;
-    transition: all 0.3s;
-  }
-  
-  .navbar-toggler.open .animated-icon {
-    background-color: transparent;
-  }
-  
-  .navbar-toggler.open .animated-icon:before {
-    transform: rotate(45deg);
-    top: 50px;
-  }
-  
-  .navbar-toggler.open .animated-icon:after {
-    transform: rotate(-45deg);
-    top: 50px;
-  }
-  
-  .navbar-toggler .animated-icon:before,
-  .navbar-toggler .animated-icon:after {
-    content: "";
-    display: block;
-    width: 40px;
-    height: 3px;
-    background-color: var(--blue);
-    position: absolute;
-    transition: all 0.3s;
-  }
-  
-  .navbar-toggler .animated-icon:before {
-    top: 40px;
-  }
-  
-  .navbar-toggler .animated-icon:after {
-    top: 52px;
-  }
-  
-  .navbar-btn {
-    background-color: var(--yellow);
-    color: var(--blue);
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .navbar-btn:hover {
-    background-color: var(--blue);
-    color: var(--white);
-  }
-  
-  @media (min-width: 992px) {
-    .navbar-expand-lg .navbar-nav .nav-link {
-      padding-right: 1.5rem;
-      padding-left: 1.5rem;
-    }
-  }
+   
   </style>
 </head>
 <body>
   
-  <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top d-flex justify-content-center">
     <div class="container">
-      <a class="navbar-brand " href="#">
+      <a class="navbar-brand " href="index.html">
         <img src="main_logo (1).png" alt="" width="200" />
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="animated-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#driving-force">Driving Force</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#join_us">Join Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#blogs">Blogs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact_us">Contact Us</a>
-          </li>
-          <li class="nav-item">
-            <button class="navbar-btn">
-             <a href="signup.html">Sign Up</a> 
-            </button>
-          </li>
-        </ul>
-      </div>
+      
     </div>
   </nav>
   <div class="signup-form">
@@ -236,7 +111,7 @@
             <input type="password" class="form-control" id="password" placeholder="Password">
           </div>
           <div class="form-group">
-            <label for="confirmPassword" style="color: aliceblue;">Confirm Pa/ssword:</label>
+            <label for="confirmPassword" style="color: aliceblue;">Confirm Password:</label>
             <input type="password" class="form-control" id="confirmPassword" placeholder="Enter your Password again">
           </div>
           <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
