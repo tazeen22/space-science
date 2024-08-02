@@ -12,7 +12,9 @@
     href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -23,75 +25,86 @@
   <title>TAZSPACE-CHALLENGE</title>
 </head>
 <style>
-   .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #282d2d47;
-      backdrop-filter: blur(10px);
-      padding: 1rem;
-      position: fixed;
-      width: 100%;
-      top: 0;
-      z-index: 1000;
-    }
-    .navbar-brand img {
-      width: 200px;
-    }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #282d2d47;
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .navbar-brand img {
+    width: 200px;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-item {
+    margin-left: 1rem;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    color: #000;
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-btn a {
+    text-decoration: none;
+    color: #fff;
+    /* background-color: #007bff; */
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+  }
+
+  .navbar-toggler {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .navbar-toggler span {
+    height: 3px;
+    width: 25px;
+    background: #9e9a9a;
+    margin: 4px 0;
+  }
+
+  @media (max-width: 768px) {
     .navbar-nav {
-      display: flex;
-      flex-direction: row;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .nav-item {
-      margin-left: 1rem;
-    }
-    .nav-link {
-      text-decoration: none;
-      color: #000;
-      padding: 0.5rem 1rem;
-    }
-    .navbar-btn a {
-      text-decoration: none;
-      color: #fff;
-      /* background-color: #007bff; */
-      padding: 0.5rem 1rem;
-      border-radius: 0.25rem;
-    }
-    .navbar-toggler {
       display: none;
       flex-direction: column;
-      cursor: pointer;
+      width: 100%;
+      background-color: rgb(18 21 24 / 87%);
+      position: absolute;
+      top: 129px;
+      left: 0;
     }
-    .navbar-toggler span {
-      height: 3px;
-      width: 25px;
-      background: #9e9a9a;
-      margin: 4px 0;
+
+    .navbar-nav.active {
+      display: flex;
     }
-    @media (max-width: 768px) {
-      .navbar-nav {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: rgb(18 21 24 / 87%);
-        position: absolute;
-        top: 129px;
-        left: 0;
-      }
-      .navbar-nav.active {
-        display: flex;
-      }
-      .navbar-toggler {
-        display: flex;
-      }
-      .nav-item {
-        text-align: center;
-        margin: 0;
-      }
+
+    .navbar-toggler {
+      display: flex;
     }
+
+    .nav-item {
+      text-align: center;
+      margin: 0;
+    }
+  }
 </style>
 
 <body>
@@ -132,9 +145,9 @@
       </li>
     </ul>
   </nav>
-  
+
   <script>
-    document.getElementById('navbar-toggler').addEventListener('click', function() {
+    document.getElementById('navbar-toggler').addEventListener('click', function () {
       var nav = document.getElementById('navbar-nav');
       nav.classList.toggle('active');
     });
@@ -159,8 +172,8 @@
                 </a>
               </div>
               <div class="col-6 px-2">
-                <a name="" id="" class="btn btn-primary w-100 theme-btn mb-3 d-inline-block"
-                  href="buttton.html" role="button" >
+                <a name="" id="" class="btn btn-primary w-100 theme-btn mb-3 d-inline-block" href="buttton.html"
+                  role="button">
                   <i class="fab fa-discord mr-2"></i> Join Discord
                 </a>
               </div>
@@ -306,7 +319,7 @@
               target="_blank">
               <div class="card w-100 border-0" style="width: 18rem">
                 <img src="IISTI.png" class="card-img-top" alt="..." />
-                <div class="card-body" >
+                <div class="card-body">
                   <h5 class="card-title">
                     Riding the Wave of Innovation in the Space Tech Industry
                   </h5>
@@ -376,91 +389,93 @@
         </div>
       </div>
 
-    </div>
+      </div>
     </section>
     <section class="video-container">
       <video src="msr-site-banner-1080-11-15-22.mp4" autoplay muted loop></video>
       <div class="video-overlay">
         <h1>NASA Science Missions</h1>
       </div>
-      
+
     </section>
-    
-    <section style="background-image: url('fifth_section.png'); background-size: cover; background-position: center; padding: 50px 0;" class="mt-5">
+
+    <section
+      style="background-image: url('fifth_section.png'); background-size: cover; background-position: center; padding: 50px 0;"
+      class="mt-5">
       <div class="container">
-          <div class="row justify-content-between">
-              <div class="col-xl-8 col-lg-12 my-auto">
-                  <!-- Swiper -->
-                  <div class="swiper mySwiper mb-5">
-                      <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                              <img src="nasa1.jpg" alt="" class="w-100">
-                          </div>
-                          <div class="swiper-slide">
-                              <img src="nasa2.jpg" alt="" class="w-100">
-                          </div>
-                          <div class="swiper-slide">
-                              <img src="nasa3.jpg" alt="" class="w-100">
-                          </div>
-                          <div class="swiper-slide">
-                              <img src="nasa4.jpg" alt="" class="w-100">
-                          </div>
-                          <div class="swiper-slide">
-                              <img src="nasa5.jpg" alt="" class="w-100">
-                          </div>
-                          <div class="swiper-slide">
-                              <img src="nasa6.jpg" alt="" class="w-100">
-                          </div>
-                          <div class="swiper-slide">
-                              <img src="nasa7.jpg" alt="" class="w-100">
-                          </div>
-                          <div class="swiper-slide">
-                              <img src="nasa8.jpg" alt="" class="w-100">
-                          </div>
-                          <div class="swiper-slide">
-                              <img src="nasa9.jpg" alt="" class="w-100">
-                          </div>
-                          <div class="swiper-slide">
-                              <img src="nasa10.jpg" alt="" class="w-100">
-                          </div>
-                      </div>
-                      <div class="swiper-button-next"></div>
-                      <div class="swiper-button-prev"></div>
-                  </div>
+        <div class="row justify-content-between">
+          <div class="col-xl-8 col-lg-12 my-auto">
+            <!-- Swiper -->
+            <div class="swiper mySwiper mb-5">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="nasa1.jpg" alt="" class="w-100">
+                </div>
+                <div class="swiper-slide">
+                  <img src="nasa2.jpg" alt="" class="w-100">
+                </div>
+                <div class="swiper-slide">
+                  <img src="nasa3.jpg" alt="" class="w-100">
+                </div>
+                <div class="swiper-slide">
+                  <img src="nasa4.jpg" alt="" class="w-100">
+                </div>
+                <div class="swiper-slide">
+                  <img src="nasa5.jpg" alt="" class="w-100">
+                </div>
+                <div class="swiper-slide">
+                  <img src="nasa6.jpg" alt="" class="w-100">
+                </div>
+                <div class="swiper-slide">
+                  <img src="nasa7.jpg" alt="" class="w-100">
+                </div>
+                <div class="swiper-slide">
+                  <img src="nasa8.jpg" alt="" class="w-100">
+                </div>
+                <div class="swiper-slide">
+                  <img src="nasa9.jpg" alt="" class="w-100">
+                </div>
+                <div class="swiper-slide">
+                  <img src="nasa10.jpg" alt="" class="w-100">
+                </div>
               </div>
-              <div class="col-xl-4 col-lg-12">
-                  <div class="card h-95 achievement_card">
-                      <div class="card-body achievement_card_body">
-                          <h3 class="card-title">Achievements</h3>
-                          <hr />
-                          <div class="row mt-5 justify-content-center">
-                              <div class="col-lg-12">
-                                  <div class="achievement_details_card">
-                                      <h2 class="text-yellow">5K+</h2>
-                                      <p>Registrations</p>
-                                  </div>
-                              </div>
-                              <div class="col-lg-6">
-                                  <div class="achievement_details_card">
-                                      <h2 class="text-yellow">1.5K+</h2>
-                                      <p>Idea Submission</p>
-                                  </div>
-                              </div>
-                              <div class="col-lg-6">
-                                  <div class="achievement_details_card">
-                                      <h2 class="text-yellow">80+</h2>
-                                      <p>Projects Built</p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
           </div>
+          <div class="col-xl-4 col-lg-12">
+            <div class="card h-95 achievement_card">
+              <div class="card-body achievement_card_body">
+                <h3 class="card-title">Achievements</h3>
+                <hr />
+                <div class="row mt-5 justify-content-center">
+                  <div class="col-lg-12">
+                    <div class="achievement_details_card">
+                      <h2 class="text-yellow">5K+</h2>
+                      <p>Registrations</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="achievement_details_card">
+                      <h2 class="text-yellow">1.5K+</h2>
+                      <p>Idea Submission</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="achievement_details_card">
+                      <h2 class="text-yellow">80+</h2>
+                      <p>Projects Built</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-  </section>
-  
-    
+    </section>
+
+
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- Bootstrap JS and dependencies -->
@@ -474,8 +489,8 @@
           prevEl: '.swiper-button-prev',
         },
       });
-    </script>      
-<!-- <div class="col-lg-12 mt-5">
+    </script>
+    <!-- <div class="col-lg-12 mt-5">
               <div class="card h-100 achievement_card">
                 <div class="card-body achievement_card_body">
                   <div class="row">
@@ -520,7 +535,7 @@
           prevEl: '.swiper-button-prev',
       },
   });
-</script>
+</script> -->
 
     <section class="section-bg">
       <div class="container content" id="earth">
@@ -544,25 +559,28 @@
         </div>
       </div>
     </section>
-    
 
 
-    <!-- end Section -->
+
+    <!-- end Section --> -->
     <section class="position-relative end-section">
       <div class="linked-div" id="contact_us"></div>
       <div class="linking" id="contactUs"></div>
-      <div class="container-md w-75">
+      <div class="container-md">
         <div class="row">
           <div class="col-md-6">
-            <img class="mb-4" src="main_logo.png" alt="" />
-            <h5>
+            <!-- <img class="mb-4" src="main_logo.png" alt="" /> -->
+            <p>
               <i class="fa fa-envelope text-white" aria-hidden="true"></i>
-              <a href="mailto:spaceappsnoida@hack2skill.com">spaceappsnoida@hack2skill.com</a>
-            </h5>
-            <h5>
-              <i class="bx bxs-phone-call text-white"></i>
-              <a href="tel:+919870330830">+91 9870330830</a>
-            </h5>
+                <a href="mailto:spaceappsnoida@hack2skill.com">spaceappsnoida@hack2skill.com</a>
+            </p>
+            <p>
+              <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+                <a href="tel:+919870330830">+91-9870330830</a>
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img src="space_ship.png" alt="">
           </div>
         </div>
       </div>
